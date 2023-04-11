@@ -1,0 +1,87 @@
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  --scrollbarWidth: 17px;
+  --viewportWidth: calc(100vw - var(--scrollbarWidth));
+}
+
+.view {
+  @extend .bg-light;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+
+.content {
+  &-left,
+  &-right {
+    padding: 4rem 2rem;
+  }
+}
+
+.nav-link {
+  @extend .text-secondary;
+  &.active {
+    font-weight: 700;
+  }
+}
+
+.bookmark-btn {
+  padding: 0 12px;
+
+  &:active,
+  &:first-child:active {
+    border-color: transparent;
+  }
+}
+
+.bookmarks-menu {
+  background: white;
+  border-radius: 4px;
+  left: 10px;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  .bookmark-all {
+    padding: 0;
+
+    span {
+      display: block;
+      padding: 1rem;
+    }
+
+    &:active,
+    &:first-child:active {
+      border-color: transparent;
+    }
+  }
+}
+
+.login {
+  &-page {
+    background: turquoise;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &-wrapper {
+    background: white;
+    margin: auto;
+    max-width: 600px;
+    padding: 4rem;
+    width: 100%;
+  }
+}
+
+.main {
+  &-content {
+    background: turquoise;
+    padding: 0 10%;
+  }
+}
