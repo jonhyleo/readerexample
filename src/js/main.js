@@ -2,14 +2,6 @@
 import '../scss/styles.scss';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
-/* function updateScrollbarWidthCSSVariable() {
-  const scrollbarWidth = window.innerWidth - document.body.clientWidth;
-  document.body.style.setProperty('--scrollbarWidth', `${scrollbarWidth}px`);
-}
-
-window.addEventListener('DOMContentLoaded', updateScrollbarWidthCSSVariable);
-window.addEventListener('resize', updateScrollbarWidthCSSVariable); */
-
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap';
 
