@@ -1,8 +1,26 @@
 @import 'bootstrap/scss/bootstrap';
 
-body {
-  --scrollbarWidth: 17px;
-  --viewportWidth: calc(100vw - var(--scrollbarWidth));
+table {
+  @extend .table;
+  @extend .my-5;
+  --bs-table-bg: #f9f4e9;
+  --bs-table-border-color: white;
+  border-collapse: separate;
+  & > :not(caption) > * > *,
+  thead,
+  tbody,
+  tfoot,
+  tr,
+  td,
+  th {
+    border-color: white;
+    border-width: 5px;
+  }
+
+  thead {
+    @extend .table-dark;
+    --bs-table-bg: #2f344c;
+  }
 }
 
 .view {
