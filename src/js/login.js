@@ -3,7 +3,6 @@ import '../scss/styles.scss';
 
 // Display alert with username and password when the login button is clicked
 const loginBtn = document.querySelector('.login-btn');
-console.log(loginBtn);
 const form = document.getElementById('login-form');
 loginBtn.addEventListener('click', (e) => {
   e.preventDefault();
